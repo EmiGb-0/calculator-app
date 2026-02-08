@@ -23,18 +23,21 @@ Calculadora móvil desarrollada con **Expo y React Native**, enfocada en una arq
 
 ### Estructura del proyecto
 
-src/
-├── app/
+app/
+├── _layout.tsx
 │ └── index.tsx
-├── components/
-│ ├── CalculatorButton.tsx
+assets/
+├── fonts/
+│ └── images/
+components/
+├── CalculatorButton.tsx
 │ └── ThemeText.tsx
-├── hooks/
-│ └── useCalculator.ts
-├── styles/
-│ └── global-styles.ts
-├── constants/
+constants/
 │ └── theme.ts
+hooks/
+│ └── useCalculator.tsx
+styles/
+│ └── global-styles.ts
 
 
 ## 🛠️ Stack Tecnológico
@@ -61,7 +64,7 @@ cd calculator-app
 ### 2️⃣ Instalar dependencias
 
 ```bash
-
+bun install
 ```
 
 ### 3️⃣ Ejecutar el proyecto
