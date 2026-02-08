@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# Calculator App · Expo React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Calculadora móvil desarrollada con **Expo y React Native**, enfocada en una arquitectura limpia, lógica desacoplada mediante custom hooks y una interfaz minimalista inspirada en iOS.
 
-## Get started
+## ✨ Características
 
-1. Install dependencies
+- ➕➖✖️➗ Operaciones aritméticas básicas
+- 🧠 Lógica central desacoplada con `useCalculator`
+- 📱 UI responsiva tipo iOS
+- 🎯 Validaciones de entrada numérica
+- 📳 Feedback háptico en botones
+- 🔤 Tipografía personalizada (Space Mono)
+- 🎨 Componentes reutilizables
+- 🌙 Estilo oscuro (dark mode)
 
-   ```bash
-   npm install
-   ```
+## 🧱 Arquitectura
 
-2. Start the app
+- UI desacoplada de la lógica
+- Custom Hook para manejo del estado y operaciones
+- Componentes reutilizables (`CalculatorButton`, `ThemeText`)
+- Estilos globales centralizados
+- Expo Router como entry point
 
-   ```bash
-   npx expo start
-   ```
+### Estructura del proyecto
 
-In the output, you'll find options to open the app in a
+src/
+├── app/
+│ └── index.tsx
+├── components/
+│ ├── CalculatorButton.tsx
+│ └── ThemeText.tsx
+├── hooks/
+│ └── useCalculator.ts
+├── styles/
+│ └── global-styles.ts
+├── constants/
+│ └── theme.ts
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Stack Tecnológico
 
-## Get a fresh project
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- Bun (gestor de paquetes)
+- Expo Haptics
+- Expo Font
 
-When you're ready, run:
+## 🚀 Instalación y ejecución
+
+> Este proyecto utiliza **Bun** como gestor de dependencias.
+
+### 1️⃣ Clonar el repositorio
 
 ```bash
-npm run reset-project
+git clone https://github.com/tu-usuario/calculator-app.git
+cd calculator-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2️⃣ Instalar dependencias
 
-## Learn more
+```bash
 
-To learn more about developing your project with Expo, look at the following resources:
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 3️⃣ Ejecutar el proyecto
+```bash
+bun run start
+```
 
-## Join the community
+### O directamente por plataforma:
+```bash
+bun run android
+bun run ios
+bun run web
+```
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Desarrollado con ❤️ usando Expo y React Native
